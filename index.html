@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PLAYBOYRSA - PORTFOLIO</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: 'Poppins', sans-serif; color: #fff; }
+
+    /* Background video */
+    video {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover; z-index: -2;
+    }
+    .overlay {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6); z-index: -1;
+    }
+
+    /* Container & Card */
+    .container {
+      display: flex; align-items: center; justify-content: center;
+      padding: 60px 20px; min-height: 100vh;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 40px 30px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+      max-width: 800px; width: 100%;
+      animation: fadeIn 1.2s ease forwards;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(24px);} to { opacity: 1; transform: translateY(0); }}
+
+    /* Profile */
+    .profile-pic { width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; margin-bottom: 20px; }
+    h1 { font-size: 2rem; margin-bottom: 8px; letter-spacing: 0.02em; }
+    p { font-size: 1.05rem; margin-bottom: 18px; line-height: 1.5; color: #e9eef6; }
+
+    /* Info Boxes */
+    .info-box { text-align: left; margin-top: 20px; }
+    .info-box h2 {
+      font-size: 1.15rem; margin-bottom: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.12); padding-bottom: 6px;
+    }
+    .info-box ul { list-style: none; padding: 0; line-height: 1.8; color: #dfefff; }
+    .info-box ul li::before { content: "› "; color: #00c6ff; font-weight: 600; }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: transform .18s ease, box-shadow .18s ease;
+      background: linear-gradient(135deg, #00c6ff, #0072ff);
+      box-shadow: 0 6px 18px rgba(0,198,255,0.12);
+    }
+    .btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,114,255,0.18); }
+
+    /* Footer */
+    footer { margin-top: 26px; font-size: 0.9rem; color: #c9d2e6; text-align: center; }
+
+    /* Responsive */
+    @media (max-width: 520px) {
+      .card { padding: 26px; border-radius: 16px; }
+      .profile-pic { width: 110px; height: 110px; }
+      h1 { font-size: 1.45rem; }
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline preload="auto" poster="poster.jpg" aria-hidden="true">
+    <source src="bg.mp4" type="video/mp4" />
+  </video>
+  <div class="overlay" aria-hidden="true"></div>
+
+  <main class="container" role="main" aria-labelledby="hero-title">
+    <section class="card" aria-label="Profile card">
+      <img src="file.png" alt="Photo of PLAYBOYRSA" class="profile-pic" />
+      <h1 id="hero-title">PLAYBOYRSA</h1>
+      <p>HI! I'M PLAYBOYRSA — LEADER OF TARAGON SQUAD | TRS AND MEMBER OF MONEY POWER RESPECT | MPR</p>
+
+      <div class="info-box" aria-labelledby="about-heading">
+        <h2 id="about-heading">ABOUT ME</h2>
+        <ul>
+          <li><strong>NATIONALITY - </strong>SOUTH AFRICA (ZA)</li>
+          <li><strong>HOBBIES - </strong>LEARNING</li>
+        </ul>
+      </div>
+
+      <div class="info-box" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">SKILLS</h2>
+        <ul>
+          <li>DEVELOPER</li>
+          <li>CODER</li>
+          <li>MODDER</li>
+          <li>EDITOR</li>
+          <li>WEBSITE UI/UX DESIGNER</li>
+          <li>CARDER/BINNER</li>
+          <li>TUNNELER</li>
+          <li>HACKER</li>
+          <li>AI EXPERT</li>
+        </ul>
+      </div>
+
+      <div class="buttons">
+        <a href="https://t.me/IMPLAYBOYRSA_WORLD" class="btn" target="_blank" rel="noopener noreferrer">TELEGRAM</a>
+        <a href="https://whatsapp.com/channel/0029VbBP7EB0gcfPIVoWBd1z" class="btn" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+        <a href="https://www.facebook.com/profile.php?id=61578816958654&mibextid=rS40aB7S9Ucbxw6v" class="btn" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+        <a href="https://www.youtube.com/@LETHABOPLAYBOYRSA" class="btn" target="_blank" rel="noopener noreferrer">YOUTUBE</a>
+        <a href="https://github.com/Playboyrsa27" class="btn" target="_blank" rel="noopener noreferrer">GITHUB</a>
+      </div>
+
+      <footer>© 2025 PLAYBOYRSA — ALL RIGHTS RESERVED</footer>
+    </section>
+  </main>
+</body>
+</html>
